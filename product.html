@@ -799,353 +799,345 @@
     </style>
 
   <style>
-        .creative-dentals-products-wrapper {
-            font-family: 'Arial', sans-serif;
-            padding: 40px 20px 60px 20px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 40px;
-            align-items: stretch;
-            justify-content: center;
+        .creative-dentals-modern-container {
             max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .creative-dentals-modern-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .creative-dentals-modern-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a202c;
+            margin-bottom: 10px;
+        }
+
+        .creative-dentals-modern-subtitle {
+            font-size: 1.1rem;
+            color: #718096;
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        .creative-dentals-product-container {
-            background: white;
-            border-radius: 15px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            width: 100%;
-            height: 100%;
+        .creative-dentals-modern-grid {
             display: grid;
-            grid-template-columns: 2fr 1.5fr;
-            grid-template-rows: auto auto;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 30px;
-            align-items: start;
-            position: relative;
+            margin-top: 40px;
+        }
+
+        .creative-dentals-modern-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             overflow: hidden;
-            min-height: 500px;
-            margin-bottom: 40px;
-        }
-
-        .creative-dentals-product-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 4px;
-            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-        }
-
-        .creative-dentals-left-section {
-            display: flex;
-            flex-direction: column;
-            align-self: start;
-            grid-column: 1;
-            grid-row: 1;
-        }
-
-        .creative-dentals-product-title {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2d3748;
-            margin-bottom: 15px;
-            line-height: 1.2;
-        }
-
-        .creative-dentals-product-subtitle {
-            font-size: 18px;
-            color: #4a5568;
-            margin-bottom: 20px;
-        }
-
-        .creative-dentals-advantages-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: #2d3748;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .creative-dentals-advantages-list {
-            list-style: none;
-            margin-bottom: 20px;
-        }
-
-        .creative-dentals-advantages-list li {
-            margin-bottom: 6px;
-            color: #4a5568;
-            font-size: 13px;
-            line-height: 1.4;
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
             position: relative;
-            padding-left: 15px;
         }
 
-        .creative-dentals-advantages-list li::before {
-            content: '•';
-            color: #667eea;
-            font-weight: bold;
-            position: absolute;
-            left: 0;
+        .creative-dentals-modern-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
         }
 
-        .creative-dentals-specifications {
-            margin-top: 15px;
-        }
-
-        .creative-dentals-spec-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 6px;
-            padding: 4px 0;
-            border-bottom: 1px dotted #e2e8f0;
-        }
-
-        .creative-dentals-spec-label {
-            font-size: 12px;
-            color: #4a5568;
-        }
-
-        .creative-dentals-spec-value {
-            font-weight: bold;
-            color: #2d3748;
-            font-size: 12px;
-        }
-
-        .creative-dentals-spec-dots {
-            flex: 1;
-            margin: 0 8px;
-            border-bottom: 1px dotted #cbd5e0;
-        }
-
-        .creative-dentals-right-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            grid-column: 2;
-            grid-row: 1;
-            height: 100%;
-            gap: 15px;
-        }
-
-        .creative-dentals-warranty-badge {
-            width: 70px;
-            height: 70px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .creative-dentals-modern-card-header {
+            padding: 30px 30px 20px;
+            background: linear-gradient(135deg, #20CCC8 0%, #764ba2 100%);
             color: white;
-            font-weight: bold;
-            font-size: 20px;
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
             position: relative;
-            flex-shrink: 0;
+            min-height: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
-        .creative-dentals-warranty-badge::after {
-            content: 'WARRANTY';
-            position: absolute;
-            bottom: -20px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 9px;
-            letter-spacing: 1px;
-            color: #4a5568;
-            white-space: nowrap;
+        .creative-dentals-modern-card-title {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.3;
         }
 
-        .creative-dentals-product-image {
+        .creative-dentals-modern-card-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            line-height: 1.4;
+            margin-bottom: 15px;
+        }
+
+        .creative-dentals-modern-card-body {
+            padding: 30px;
+        }
+
+        .creative-dentals-modern-image-container {
+            text-align: center;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #f8fafc;
+            border-radius: 12px;
+        }
+
+        .creative-dentals-modern-product-image {
             width: 100%;
-            max-width: 200px;
-            height: 140px;
+            max-width: 300px;
+            height: 200px;
             object-fit: cover;
             border-radius: 8px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
-            margin: 15px 0;
         }
 
-        .creative-dentals-product-image:hover {
+        .creative-dentals-modern-product-image:hover {
             transform: scale(1.05);
         }
 
-        .creative-dentals-bottom-section {
+        .creative-dentals-modern-advantages {
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .creative-dentals-modern-advantages-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+        }
+
+        .creative-dentals-modern-advantages-title::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 1px;
+        }
+
+        .creative-dentals-modern-advantages-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .creative-dentals-modern-advantages-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            color: #4a5568;
+            line-height: 1.5;
+        }
+
+        .creative-dentals-modern-advantages-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #48bb78;
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .creative-dentals-modern-highlight {
+            background: linear-gradient(120deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 700;
+        }
+
+        /* Warranty Box positioned next to Advantages */
+        .creative-dentals-modern-warranty {
+            position: absolute;
+            top: -10px;
+            right: 0;
+            width: 60px;
+            height: 80px;
+            background: rgba(103, 126, 234, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            grid-column: 1 / -1;
-            grid-row: 2;
-            margin-top: 25px;
-            padding-bottom: 20px;
+            border: 2px solid rgba(103, 126, 234, 0.3);
         }
 
-        .creative-dentals-solid-zirconia {
-            background: linear-gradient(135deg, #0aa596 0%, #1A3A72 100%);
-            padding: 15px;
-            border-radius: 10px;
-            color: white;
+        .creative-dentals-modern-warranty-number {
+            font-size: 1.4rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #667eea;
+        }
+
+        .creative-dentals-modern-warranty-text {
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 5px;
+            color: #667eea;
             text-align: center;
-            box-shadow: 0 8px 20px rgba(240, 147, 251, 0.3);
-            flex: 1;
-            width: 100%;
         }
 
-        .creative-dentals-zirconia-title {
-            font-size: 16px;
-            font-weight: bold;
-            margin-bottom: 8px;
+        .creative-dentals-modern-lifetime-warranty {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+            border: 2px solid rgba(33, 150, 243, 0.5);
+            width: 60px;
+            height: 80px;
+            border-radius: 15px;
+        }
+
+        .creative-dentals-modern-lifetime-text {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.1;
+            color: white;
+        }
+
+        .creative-dentals-modern-stars {
+            color: #FFD700;
+            font-size: 0.7rem;
+            margin: 2px 0;
+        }
+
+        /* Warranty info text below advantages */
+        .creative-dentals-modern-warranty-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .creative-dentals-modern-warranty-info.lifetime {
+            background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+        }
+
+        .creative-dentals-modern-specifications {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .creative-dentals-modern-spec-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 15px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
 
-        .creative-dentals-zirconia-text {
-            font-size: 12px;
-            line-height: 1.4;
+        .creative-dentals-modern-spec-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .creative-dentals-modern-spec-row:last-child {
+            border-bottom: none;
+        }
+
+        .creative-dentals-modern-spec-label {
+            font-size: 0.85rem;
+            color: #718096;
+        }
+
+        .creative-dentals-modern-spec-value {
+            font-weight: 700;
+            color: #2d3748;
+            font-size: 0.9rem;
+        }
+
+        .creative-dentals-modern-footer {
+            background: linear-gradient(135deg, #0aa596 0%, #1A3A72 100%);
+            padding: 20px;
+            border-radius: 12px;
+            color: white;
+            text-align: center;
+        }
+
+        .creative-dentals-modern-footer-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .creative-dentals-modern-footer-text {
+            font-size: 0.85rem;
+            line-height: 1.5;
             opacity: 0.95;
         }
 
-        .creative-dentals-highlight {
-            text-decoration: underline;
-            font-weight: bold;
-        }
-
-
-
         /* Responsive Design */
-        @media (max-width: 1200px) {
-            .creative-dentals-products-wrapper {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 60px;
-                max-width: 1200px;
-                padding: 30px 20px 50px 20px;
-            }
-        }
-
         @media (max-width: 768px) {
-            .creative-dentals-products-wrapper {
-                grid-template-columns: 1fr;
-                gap: 50px;
-                padding: 25px 15px 40px 15px;
+            .creative-dentals-modern-container {
+                padding: 20px 15px;
             }
 
-            .creative-dentals-product-container {
+            .creative-dentals-modern-grid {
                 grid-template-columns: 1fr;
-                grid-template-rows: auto auto auto;
                 gap: 20px;
-                padding: 20px;
-                min-height: auto;
             }
 
-
-
-            .creative-dentals-left-section {
-                grid-column: 1;
-                grid-row: 1;
-                order: 1;
+            .creative-dentals-modern-title {
+                font-size: 2rem;
             }
 
-            .creative-dentals-product-title {
-                font-size: 22px;
-                text-align: center;
+            .creative-dentals-modern-card-header {
+                padding: 25px 25px 15px;
             }
 
-            .creative-dentals-product-subtitle {
-                font-size: 16px;
-                text-align: center;
+            .creative-dentals-modern-card-body {
+                padding: 25px;
             }
 
-            .creative-dentals-right-section {
-                grid-column: 1;
-                grid-row: 2;
-                order: 2;
-                flex-direction: column;
-                align-items: center;
-                gap: 15px;
-                margin: 15px 0;
-            }
-
-            .creative-dentals-bottom-section {
-                grid-column: 1;
-                grid-row: 3;
-                order: 3;
-                margin-top: 10px;
-            }
-
-            .creative-dentals-warranty-badge {
-                width: 60px;
+            .creative-dentals-modern-warranty {
+                width: 50px;
                 height: 60px;
-                font-size: 18px;
-                margin-bottom: 15px;
+                top: -5px;
+                right: 10px;
             }
 
-            .creative-dentals-product-image {
-                max-width: 220px;
-                height: 120px;
+            .creative-dentals-modern-warranty-number {
+                font-size: 1.2rem;
+            }
+
+            .creative-dentals-modern-warranty-text {
+                font-size: 0.6rem;
             }
         }
 
         @media (max-width: 480px) {
-            .creative-dentals-products-wrapper {
-                padding: 20px 10px 35px 10px;
-                gap: 35px;
+            .creative-dentals-modern-container {
+                padding: 15px 10px;
             }
 
-            .creative-dentals-product-container {
-                padding: 15px;
-                gap: 15px;
-                min-height: auto;
+            .creative-dentals-modern-card-header {
+                padding: 20px;
             }
 
-            .creative-dentals-product-title {
-                font-size: 18px;
-            }
-
-            .creative-dentals-product-subtitle {
-                font-size: 14px;
-            }
-
-            .creative-dentals-advantages-list li {
-                font-size: 12px;
-            }
-
-            .creative-dentals-spec-label, .creative-dentals-spec-value {
-                font-size: 11px;
-            }
-
-            .creative-dentals-product-image {
-                max-width: 180px;
-                height: 100px;
-            }
-
-            .creative-dentals-warranty-badge {
-                width: 50px;
-                height: 50px;
-                font-size: 16px;
-            }
-
-            .creative-dentals-warranty-badge::after {
-                font-size: 8px;
-                bottom: -18px;
-            }
-
-            .creative-dentals-zirconia-title {
-                font-size: 14px;
-            }
-
-            .creative-dentals-zirconia-text {
-                font-size: 11px;
-            }
-
-            .creative-dentals-solid-zirconia {
-                padding: 12px;
+            .creative-dentals-modern-card-body {
+                padding: 20px;
             }
         }
     </style>
@@ -1288,716 +1280,510 @@
      
     </main> 
    
-    <div class="creative-dentals-products-wrapper">
-        <!-- Product 1 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">Creative Dentals Sweden</h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Anterior</h2> -->
-                
-                <div class="creative-dentals-advantages-title">ADVANTAGES:</div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Outstanding strength of >880 mpa.</li>
-                    <li>Efficiency integrated color gradient.</li>
-                    <li>Esthetics highly <span class="creative-dentals-highlight">Translucent</span> & Polychromatic.</li>
-                    <li>Color selection & color incl.gradient.</li>
-                    <li>Can be used with Conventional/Resin Cements.</li>
-                    <li>Full Contour Single units & 3 Unit Bridges.</li>
-                </ul>
-
-                <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">46%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">880%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Esthetics</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="creative-dentals-right-section">
-                
-                
-                <img src="/img/Picture1.png" alt="Dental Crown Close-up" class="creative-dentals-product-image">
-
-                <div class="creative-dentals-warranty-badge">
-                    15
-                </div>
-            </div>
-
-            <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">Solid Zirconia</div>
-                    <div class="creative-dentals-zirconia-text">
-                        The new Zirconia standard for life like Aesthetics, <span class="creative-dentals-highlight">Color accuracy</span> long-lasting Aesthetic (<span class="creative-dentals-highlight">True Color Technology</span>) tested safety.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-         <!-- Product 4 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                 <h1 class="creative-dentals-product-title">Creative Dentals ProMax</h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Implant Crown</h2>  -->
-                
-                <div class="creative-dentals-advantages-title">ADVANTAGES:</div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Incredibly thinner margins when</li>
-                    <li>compared with conventional PFM</li>
-                    <li>The CAD process detects & eliminates undercut</li>
-                    <li>Long spam bridges upto 14 units can be fabricated with high precision. </li>
-                </ul>
-
-                <div style="width: 80px; height: 80px; margin-top: 10px; background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 3px solid #ffffff; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4); position: relative;">
-    
-    <div style="color: white; font-weight: bold; font-size: 11px; letter-spacing: 0.5px; font-family: Arial, sans-serif;">LIFETIME</div>
-    <div style="color: #FFD700; font-size: 8px; margin: 1px 0;">★★★</div>
-    <div style="color: white; font-weight: bold; font-size: 6px; letter-spacing: 0.5px; font-family: Arial, sans-serif;">WARRANTY</div>
-</div>
-
-                <!-- <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">44%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">920%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Biocompatibility</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">★★★★★</span>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="creative-dentals-right-section">
-                
-                
-                <img src="/img/Picture5.png" alt="Implant Crown" class="creative-dentals-product-image">
-                <div class="creative-dentals-warranty-badge">
-                    10
-                </div>
-                
-            </div>
-
-            <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">DMLS/LASER PFM</div>
-                    <div class="creative-dentals-zirconia-text">
-                        SINTERING(DMLS):This system uses CAD
-data to fabricate the desired frame by 
-selectively sintering the alloy powder layer
- by layer.this machine uses special based 
- alloy,which is highly bio-compatible.It 
- offers a high tensile strength of 1350mpa 
-and has an excellent bonding strength.
-<!-- <span class="creative-dentals-highlight">Perfect Integration</span> and superior tissue response (<span class="creative-dentals-highlight">Implant-Pro Technology</span>) validated. -->
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product 2 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h5 class="creative-dentals-product-title">Cercon Aesthetic & Monolithic </h5>
-                <!-- <h2 class="creative-dentals-product-subtitle">Cercon Aesthetic & Monolithic </h2> -->
-                
-                <div class="creative-dentals-advantages-title">ADVANTAGES:</div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Outstanding strength of >1270mpa.</li>
-                    <li>Bio-compatible & durable.</li>
-                    <li>Suitable for cases where occiusal space is limited.</li>
-                    <li>Pre-shaded Zirconia for staining /Resin Cements.</li>
-                    <li>Can be used with Conventional/Resin Cements.</li>
-                    <li>FullContour Zirconia Restorations possible.</li>
-                </ul>
-
-                <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">42%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">1270mpa</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Esthetics</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="creative-dentals-right-section">
-                
-                
-                <img src="/img/Picture2.png" alt="Posterior Dental Crown" class="creative-dentals-product-image">
-                <div class="creative-dentals-warranty-badge">
-                    15
-                </div>
-            </div>
-
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">High Strength Zirconia</div>
-                    <div class="creative-dentals-zirconia-text">
-                        Advanced Zirconia formula for <span class="creative-dentals-highlight">Maximum Durability</span> and superior bite force resistance (<span class="creative-dentals-highlight">Pro-Strength Technology</span>) clinically proven.
-                    </div>
-                </div>
-            </div> -->
-        </div>
-
-        <!-- Product 3 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">DENTAL IMPLANT </h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Full Mouth</h2> -->
-                
-                <div class="creative-dentals-advantages-title">Implant Solutions: </div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Cement Retained</li>
-                    <li>Screw Retained</li>
-                    <li>Hybrid Denture</li>
-                    <li>Hybrid 4.Over Denture</li>
-                    <li>Custom Abutment</li>
-                </ul>
-
-                <!-- <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">52%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">1000%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Aesthetics</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">★★★★★</span>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="creative-dentals-right-section">
-                <!-- <div class="creative-dentals-warranty-badge">
-                    25
-                </div> -->
-                
-                <img src="/img/Picture3.png" alt="Perfect Smile Restoration" class="creative-dentals-product-image">
-            </div>
-
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">Elite Zirconia</div>
-                    <div class="creative-dentals-zirconia-text">
-                        Premium Zirconia technology for complete smile makeovers with <span class="creative-dentals-highlight">Natural Aesthetics</span> and lifetime durability (<span class="creative-dentals-highlight">Elite-Grade Technology</span>) certified.
-                    </div>
-                </div>
-            </div> -->
-        </div>
-
-       
-
-        <!-- Product 5 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">TILITE 3D CAD CAM PFM</h1>
-                <h2 class="creative-dentals-product-subtitle">Tilite is  a 100% Medically pure cermic alloy with titanium from USA made utilizing 7 Medically Pure earth elements.</h2>
-                
-                <div class="creative-dentals-advantages-title">ADVANTAGES:</div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Tilite PFM is ideal to be used with impiants because of its Medical Purity.</li>
-                    <li>ideal for patients sensitive to nickle chrome.</li>
-                </ul>
-
-                <!-- <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">40%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">980%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Stability</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">★★★★★</span>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="creative-dentals-right-section">
-                <div class="creative-dentals-warranty-badge">
-                    10
-                </div>
-                
-                <img src="/img/Picture6.png" alt="Dental Bridge" class="creative-dentals-product-image">
-            </div>
-
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">Bridge Zirconia</div>
-                    <div class="creative-dentals-zirconia-text">
-                        Advanced Zirconia engineering for complex bridge work with <span class="creative-dentals-highlight">Superior Strength</span> and precise fit guarantee (<span class="creative-dentals-highlight">Bridge-Fit Technology</span>) certified.
-                    </div>
-                </div>
-            </div> -->
-        </div>
-
-        <!-- Product 6 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">3 m Lava TM Esthetic</h1>
-                <h2 class="creative-dentals-product-subtitle">Esthetic Fluorescent Full-Contour Zirconia Varity ranges of crown and brides with branded warranty</h2>
-                
-                <!-- <div class="creative-dentals-advantages-title">ADVANTAGES:</div> -->
-                <ul class="creative-dentals-advantages-list">
-                    <li>First zirconia with inherent,tooth-like fluorescence for high-esthetic</li>
-                    <li>full-contour crown and bridge cases.</li>
-                    <li>High translucency,optimized  for full-contour anterior and posterior</li>
-                    <li>restorations.</li>
-                    <li>Excellent shade match to VITA@ Classic shades with unique shading </li>
-                    <li>technology and built-in shade gradient. </li>
-                    
-                </ul>
-
-                <!-- <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">58%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">850%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Aesthetics</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">★★★★★</span>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="creative-dentals-right-section">
-                <!-- <div class="creative-dentals-warranty-badge">
-                    12
-                </div> -->
-                
-                <img src="/img/Picture7.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-            </div>
-
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">Aesthetic Zirconia</div>
-                    <div class="creative-dentals-zirconia-text">
-                        Premium aesthetic Zirconia for beautiful smile makeovers with <span class="creative-dentals-highlight">Natural Translucency</span> and perfect color match (<span class="creative-dentals-highlight">Aesthetic-Pro Technology</span>) proven.
-                    </div>
-                </div>
-            </div> -->
-        </div>
-
-
-        <!-- Product 7 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">SPARTAN ZIRCONIA PREMIUM</h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Veneer Crown</h2>
-                 -->
-                <div class="creative-dentals-advantages-title">ADVANTAGES:</div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Outstanding strength of>1370mpa.</li>
-                    <li>High opacity for discolored stumps.</li>
-                    <li>Flexibility in processing for fixed & </li>
-                    <li>implant supported prosthetics</li>
-                    <li>High processing comfort easy to mill.</li>
-                </ul>
-
-                <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">30%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">1370mpa</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Esthetics </span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="creative-dentals-right-section">
-                
-                
-                <img src="/img/Picture8.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-                <div class="creative-dentals-warranty-badge">
-                    10
-                </div>
-            </div>
-
-            <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">SPARTAN ZIRCONIA PREMIUM</div>
-                    <div class="creative-dentals-zirconia-text">
-                        Monolithic layering from single tooth to Multi unit Bridgr Restoration(Nexxzr T ) perfect balance between Translucency & Strength bio-compatible & durable.
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Product 8 -->
-         <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">SPARTAN ZIRCONIA CLASSIC</h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Veneer Crown</h2>
-                 -->
-                <div class="creative-dentals-advantages-title">ADVANTAGES:</div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>High-translucent,monolithic & monochromatic</li>
-                    <li>It's high esthetic translucency fulfill and esthetic</li>
-                    <li>demans,with strong durability to low-temerature degradation.</li>
-                </ul>
-
-                <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Esthetics </span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="creative-dentals-right-section">
-                
-                
-                <img src="/img/Picture9.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-
-                <div class="creative-dentals-warranty-badge">
-                    10
-                </div>
-            </div>
-
-            <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">SPARTAN ZIRCONIA CLASSIC</div>
-                    <div class="creative-dentals-zirconia-text">
-                        High Translucent medically approved full contour and layered Zirconia crown and Bridges.  Our Zirconia restorations are the strongest restorations we offer
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <div class="creative-dentals-modern-container">
         
 
-        <!-- Product 10 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">Zr Heinex Sweden PRIME </h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Veneer Crown</h2>
-                 -->
-                <!-- <div class="creative-dentals-advantages-title">ADVANTAGES:</div> -->
-                <ul class="creative-dentals-advantages-list">
-                    <li>Meet the Zirconia with the highest fracture toughness in the world.</li>
-                    <li>Heinex is the strongest Zirconia in the market today</li>
-                    <li>Heinex  Crowns are optimal not only for full contour Anterior restorations but can also be used for </li>
-                    <li>Posterior restorations due  to the hard density of the material. Heinex Blanks are made Yttria  </li>
-                    <li>stabilized on every single grain-manufactured bby market leader Japanese company.</li>
-                </ul>
-
-                <!-- <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">30%</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">1370mpa</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Esthetics </span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="creative-dentals-right-section">
-                <!-- <div class="creative-dentals-warranty-badge">
-                    10
-                </div> -->
-
-                <img src="/img/Picture10.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-
-                <div style="width: 80px; height: 80px; margin-top: 10px; background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 3px solid #ffffff; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4); position: relative;">
-    
-    <div style="color: white; font-weight: bold; font-size: 11px; letter-spacing: 0.5px; font-family: Arial, sans-serif;">LIFETIME</div>
-    <div style="color: #FFD700; font-size: 8px; margin: 1px 0;">★★★</div>
-    <div style="color: white; font-weight: bold; font-size: 6px; letter-spacing: 0.5px; font-family: Arial, sans-serif;">WARRANTY</div>
-</div>
-                
-                
-            </div>
-
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">SPARTAN ZIRCONIA CLASSIC</div>
-                    <div class="creative-dentals-zirconia-text">
-                        High Translucent medically approved full contour and layered Zirconia crown and Bridges.  Our Zirconia restorations are the strongest restorations we offer
-                    </div>
+        <div class="creative-dentals-modern-grid">
+            <!-- ZrHeinex Sweden Anterior -->
+            <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">ZrHeinex Sweden Anterior</h2>
                 </div>
-            </div> -->
-        </div>
-
-        <!-- Product 12 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">EMAX CAD MILLED </h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Veneer Crown</h2>
-                 -->
-                <!-- <div class="creative-dentals-advantages-title">ADVANTAGES:</div> -->
-                <ul class="creative-dentals-advantages-list">
-                    <li>The EMAX Crowns are prepared from lithium disilicate,which is aglas-ceramic and possess excellent strength.</li>
-                    <li>These crowns are extremely durable and highly esthetic</li>
-                    <li>Comparatively most esthetic option at present , hence it’s widely used for restoring teeth in the anterior(front)region.</li>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture1.png " alt="Dental Crown Close-up" class="creative-dentals-modern-product-image">
+                    </div>
                     
-                </ul>
-            </div>
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Outstanding strength of >880 mpa</li>
+                            <li>Efficiency integrated color gradient</li>
+                            <li>Esthetics highly <span class="creative-dentals-modern-highlight">Translucent</span> & Polychromatic</li>
+                            <li>Color selection & color incl.gradient</li>
+                            <li>Can be used with Conventional/Resin Cements</li>
+                            <li>Full Contour Single units & 3 Unit Bridges</li>
+                        </ul>
+                    </div>
 
-            <div class="creative-dentals-right-section">
-                <!-- <div class="creative-dentals-warranty-badge">
-                    10
-                </div> -->
+                    <div class="creative-dentals-modern-warranty-info">
+                        15 Years Warranty
+                    </div>
 
-                <img src="/img/Picture13.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-                
-                <div style="width: 80px; height: 80px; margin-top: 10px; background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); border-radius: 50%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border: 3px solid #ffffff; box-shadow: 0 4px 15px rgba(33, 150, 243, 0.4); position: relative;">
-    
-    <div style="color: white; font-weight: bold; font-size: 11px; letter-spacing: 0.5px; font-family: Arial, sans-serif;">LIFETIME</div>
-    <div style="color: #FFD700; font-size: 8px; margin: 1px 0;">★★★</div>
-    <div style="color: white; font-weight: bold; font-size: 6px; letter-spacing: 0.5px; font-family: Arial, sans-serif;">WARRANTY</div>
-</div>
-                
-                
-            </div>
+                    <div class="creative-dentals-modern-specifications">
+                        <h4 class="creative-dentals-modern-spec-title">Specifications</h4>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Translucency</span>
+                            <span class="creative-dentals-modern-spec-value">46%</span>
+                        </div>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Flexural strength</span>
+                            <span class="creative-dentals-modern-spec-value">880 MPa</span>
+                        </div>
+                    </div>
 
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">IFLEX DENTURE </div>
-                    <div class="creative-dentals-zirconia-text">
-                       Flexible partial solution for your cases. Manufactured from a thermoplastic matieral which gives it flexibility and durability.
+                    <div class="creative-dentals-modern-footer">
+                        <div class="creative-dentals-modern-footer-title">Solid Zirconia</div>
+                        <div class="creative-dentals-modern-footer-text">
+                            The new Zirconia standard for life like Aesthetics, <span class="creative-dentals-modern-highlight">Color accuracy</span> long-lasting Aesthetic.
+                        </div>
                     </div>
                 </div>
-            </div> -->
-        </div>
-         <!-- Product 10 -->
-         <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">AMANN GIRRBACH</h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Veneer Crown</h2>
-                 -->
-                <!-- <div class="creative-dentals-advantages-title">ADVANTAGES:</div> -->
-                <ul class="creative-dentals-advantages-list">
-                    <li>Zirconium oxide is very popular among dental professionals due to its convincing technical and aesthetic properties. Its versatility and excellent bio-compatibility make this high- perforamance  ceramic the first choice in many cases for high quality restorations with high aesthetic demands.</li>
-                    <li>With the Ceramill  zolid line , we offer you the right material for every zirconia – based indication,enabling restorations of long-indication, enabling restorations of long term stability and natural aesthetics to be fabricated economically and efficiently.</li>
+            </div>
+
+
+            <!-- SPARTAN ZIRCONIA PREMIUM -->
+            <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">SPARTAN ZIRCONIA PREMIUM</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture8.png " alt="Spartan Zirconia Premium" class="creative-dentals-modern-product-image">
+                    </div>
                     
-                </ul>     
-            </div>
-
-            <div class="creative-dentals-right-section">
-                
-                <img src="/img/Picture11.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-            </div>
-
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">SPARTAN ZIRCONIA CLASSIC</div>
-                    <div class="creative-dentals-zirconia-text">
-                        High Translucent medically approved full contour and layered Zirconia crown and Bridges.  Our Zirconia restorations are the strongest restorations we offer
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Outstanding strength of >1370mpa</li>
+                            <li>High opacity for discolored stumps</li>
+                            <li>Flexibility in processing for fixed & implant supported prosthetics</li>
+                            <li>High processing comfort easy to mill</li>
+                        </ul>
                     </div>
-                </div>
-            </div> -->
-        </div>
-         <!-- Product 13 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">DENTURE</h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Veneer Crown</h2>
-                 -->
-                <!-- <div class="creative-dentals-advantages-title">ADVANTAGES:</div> -->
-                <ul class="creative-dentals-advantages-list">
-                    <li>Our acrylic Dentures are a cost effective solution designed to replace missing teeth.</li>
-                    <li>Our special team of Denture Technicians ensures all Denture technicians ensures aalll Dentures are fabricated to provide durability,natural function and rsthetics.</li>
-                </ul>
-            </div>
 
-            <div class="creative-dentals-right-section">
-                <!-- <div class="creative-dentals-warranty-badge">
-                    10
-                </div> -->
-                <img src="/img/Picture14.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-            </div>
+                    <div class="creative-dentals-modern-warranty-info">
+                        10 Years Warranty
+                    </div>
 
-            <!-- <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">IFLEX DENTURE </div>
-                    <div class="creative-dentals-zirconia-text">
-                       Flexible partial solution for your cases. Manufactured from a thermoplastic matieral which gives it flexibility and durability.
+                    <div class="creative-dentals-modern-specifications">
+                        <h4 class="creative-dentals-modern-spec-title">Specifications</h4>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Translucency</span>
+                            <span class="creative-dentals-modern-spec-value">30%</span>
+                        </div>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Flexural strength</span>
+                            <span class="creative-dentals-modern-spec-value">1370 MPa</span>
+                        </div>
                     </div>
-                </div>
-            </div> -->
-        </div>
 
-        <!-- Product 14 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">PMMA</h1>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Excellent abrasion resistance & no deformation.</li>
-                    <li>Available for single shade & multi shaded.</li>
-                </ul>
-                 <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Water absorption value  </span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">40ug/cm3</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">100Mpa</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Dissolved value</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">7.5ug/cm3</span>
+                    <div class="creative-dentals-modern-footer">
+                        <div class="creative-dentals-modern-footer-title">SPARTAN ZIRCONIA PREMIUM</div>
+                        <div class="creative-dentals-modern-footer-text">
+                            Monolithic layering from single tooth to Multi unit Bridge Restoration perfect balance between Translucency & Strength bio-compatible & durable.
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="creative-dentals-right-section">
-                <!-- <div class="creative-dentals-warranty-badge">
-                    10
-                </div> -->
-                <img src="/img/Picture15.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-            </div>
-        </div>
 
-        <!-- Product 15 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">IPS e.max</h1>
-                <ul class="creative-dentals-advantages-list">
-                    <li>Crowns & Bridges made of IPS e.max press accommodate self adhesive &conventional luting protocols</li>
-                </ul>
-            </div>
-
-            <div class="creative-dentals-right-section">
-                <img src="/img/Picture16.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-            </div>
-        </div>
-
-
-       
-
-        
-       
-
-        <!-- Product 11 -->
-        <div class="creative-dentals-product-container">
-            <div class="creative-dentals-left-section">
-                <h1 class="creative-dentals-product-title">IFLEX DENTURE </h1>
-                <!-- <h2 class="creative-dentals-product-subtitle">Veneer Crown</h2>
-                 -->
-                <div class="creative-dentals-advantages-title">ADVANTAGES:</div>
-                <ul class="creative-dentals-advantages-list">
-                    <li>No Metal Framework</li>
-                    <li>Esthetic with translucent flexible clasps.</li>
-                    <li>Lightweight & comfortable.</li>
-                    <li>Easy to adjust and polish</li>
-                </ul>
-
-                <!-- <div class="creative-dentals-specifications">
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Translucency</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">30%</span>
+                  <!-- Creative Dentals ProMax -->
+                  <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">Creative Dentals ProMax</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture5.png " alt="Implant Crown" class="creative-dentals-modern-product-image">
                     </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Flexural strength</span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value">1370mpa</span>
-                    </div>
-                    <div class="creative-dentals-spec-row">
-                        <span class="creative-dentals-spec-label">Esthetics </span>
-                        <div class="creative-dentals-spec-dots"></div>
-                        <span class="creative-dentals-spec-value"></span>
-                    </div>
-                </div> -->
-            </div>
-
-            <div class="creative-dentals-right-section">
-                 
-                <img src="/img/Picture12.png" alt="Aesthetic Veneer Crown" class="creative-dentals-product-image">
-                <div class="creative-dentals-warranty-e">
                     
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Incredibly thinner margins when compared with conventional PFM</li>
+                            <li>The CAD process detects & eliminates undercut</li>
+                            <li>Long spam bridges upto 14 units can be fabricated with high precision</li>
+                            
+                        </ul>
+                    </div>
+
+                    <div class="creative-dentals-modern-warranty-info lifetime">
+                        Lifetime Warranty
+                    </div>
+                    <div class="creative-dentals-modern-specifications">
+                        <h4 class="creative-dentals-modern-spec-title">Specifications</h4>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Translucency</span>
+                            <span class="creative-dentals-modern-spec-value"></span>
+                        </div>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Flexural strength</span>
+                            <span class="creative-dentals-modern-spec-value"></span>
+                        </div>
+                    </div>
+
+                    <div class="creative-dentals-modern-footer">
+                        <div class="creative-dentals-modern-footer-title">DMLS/LASER PFM</div>
+                        <div class="creative-dentals-modern-footer-text">
+                            SINTERING(DMLS): This system uses CAD data to fabricate the desired frame by selectively sintering the alloy powder layer by layer.
+                        </div>
+                    </div>
+                </div>
+                  </div>
+
+                   <!-- Cercon Aesthetic & Monolithic -->
+                   <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">Cercon Aesthetic & Monolithic</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture2.png " alt="Posterior Dental Crown" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Outstanding strength of >1270mpa</li>
+                            <li>Bio-compatible & durable</li>
+                            <li>Suitable for cases where occlusal space is limited</li>
+                            <li>Pre-shaded Zirconia for staining /Resin Cements</li>
+                            <li>Can be used with Conventional/Resin Cements</li>
+                        </ul>
+                    </div>
+                     <p class="creative-dentals-modern-card-subtitle">Ultra Translucent Aesthetic Crown and  Bridges without compromise</p>
+
+                    <div class="creative-dentals-modern-warranty-info">
+                        15 Years Warranty
+                    </div>
+
+                    <div class="creative-dentals-modern-specifications">
+                        <h4 class="creative-dentals-modern-spec-title">Specifications</h4>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Translucency</span>
+                            <span class="creative-dentals-modern-spec-value">42%</span>
+                        </div>
+                        <div class="creative-dentals-modern-spec-row">
+                            <span class="creative-dentals-modern-spec-label">Flexural strength</span>
+                            <span class="creative-dentals-modern-spec-value">1270 MPa</span>
+                        </div>
+                    </div>
+                </div>
+                   </div>
+
+
+                    <!-- SPARTAN ZIRCONIA CLASSIC -->
+                    <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">SPARTAN ZIRCONIA CLASSIC</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture9.png " alt="Spartan Zirconia Classic" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>High-translucent, monolithic & monochromatic</li>
+                            <li>It's high esthetic translucency fulfill and esthetic demands, with strong durability to low-temperature degradation</li>
+                        </ul>
+                    </div>
+
+                    <div class="creative-dentals-modern-warranty-info">
+                        10 Years Warranty
+                    </div>
+
+                    <div class="creative-dentals-modern-footer">
+                        <div class="creative-dentals-modern-footer-title">SPARTAN ZIRCONIA CLASSIC</div>
+                        <div class="creative-dentals-modern-footer-text">
+                            High Translucent medically approved full contour and layered Zirconia crown and Bridges. Our Zirconia restorations are the strongest restorations we offer.
+                        </div>
+                    </div>
+                </div>
+                    </div>
+
+                     <!-- 3M Lava™ Esthetic -->
+                    <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">3M Lava™ Esthetic</h2>
+                    <!-- <p class="creative-dentals-modern-card-subtitle">Esthetic Fluorescent Full-Contour Zirconia Variety ranges of crown and bridges with branded warranty</p> -->
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture7.png " alt="Aesthetic Veneer Crown" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>First zirconia with inherent, tooth-like fluorescence for high-esthetic full-contour crown and bridge cases</li>
+                            <li>High translucency, optimized for full-contour anterior and posterior restorations</li>
+                            <li>Excellent shade match to VITA® Classic shades with unique shading technology and built-in shade gradient</li>
+                        </ul>
+                    </div>
+                    <p class="creative-dentals-modern-card-subtitle">Esthetic Fluorescent Full-Contour Zirconia Variety ranges of crown and bridges with branded warranty</p>
+
+                    <div class="creative-dentals-modern-warranty-info">
+                        10 Years Warranty
+                    </div>
+                </div>
+                    </div>
+
+
+                   <!-- Dental Implant -->
+                   <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">Dental Implant</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture3.png " alt="Perfect Smile Restoration" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Implant Solutions</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Cement Retained</li>
+                            <li>Screw Retained</li>
+                            <li>Hybrid Denture</li>
+                            <li>Hybrid 4.Over Denture</li>
+                            <li>Custom Abutment</li>
+                        </ul>
+                    </div>
+
+                    <div class="creative-dentals-modern-warranty-info">
+                        10 Years Warranty
+                    </div>
+                </div>
+                   </div>
+
+                   <!-- TILITE 3D CAD CAM PFM -->
+                   <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">TILITE 3D CAD CAM PFM</h2>
+                   
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture6.png " alt="Dental Bridge" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Tilite PFM is ideal to be used with implants because of its Medical Purity</li>
+                            <li>Ideal for patients sensitive to nickle chrome</li>
+                        </ul>
+                    </div>
+                     <p class="creative-dentals-modern-card-subtitle">Tilite is a 100% Medically pure ceramic alloy with titanium from USA made utilizing 7 Medically Pure earth elements.</p>
+
+                    <div class="creative-dentals-modern-warranty-info">
+                        10 Years Warranty
+                    </div>
+                </div>
+                   </div>
+
+                   
+
+            
+
+                    
+
+                     <!-- Zr Heinex Sweden PRIME -->
+                    <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">Zr Heinex Sweden PRIME</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture10.png " alt="Zr Heinex Sweden Prime" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Outstanding strength of >2000mpa</li>
+                            <li>High translucency & precise shade matching</li>
+                            <li>Excellent biocompatibility</li>
+                            <li>Superior durability for long-term performance</li>
+                        </ul>
+                    </div>
+
+                    <div class="creative-dentals-modern-warranty-info lifetime">
+                        Lifetime Warranty
+                    </div>
+
+                    </div>
+                    </div>
+
+
+
+                     <!-- AMANN GIRRBACH -->
+                    <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">AMANN GIRRBACH</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture11.png " alt="Zr Heinex Sweden Prime" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <!-- <h3 class="creative-dentals-modern-advantages-title">Advantages</h3> -->
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Zirconium oxide is very popular among dental professionals due to its convincing technical and aesthetic properties. Its versatility and excellent bio-compatibility make this high- perforamance  ceramic the first choice in many cases for high quality restorations with high aesthetic demands.</li>
+                            <li>With the Ceramill  zolid line , we offer you the right material for every zirconia – based indication,enabling restorations of long-indication, enabling restorations of long term stability and natural aesthetics to be fabricated economically and efficiently.</li>
+                            
+                        </ul>
+                    </div>
+
+                    <!-- <div class="creative-dentals-modern-warranty-info lifetime">
+                        Lifetime Warranty
+                    </div> -->
+
+                    </div>
+                    </div>
+
+
+                      <!-- IFLEX DENTURE  -->
+                     <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">IFLEX DENTURE </h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture12.png " alt="Zr Heinex Sweden Prime" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <h3 class="creative-dentals-modern-advantages-title">Advantages</h3>
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>No Metal Framework</li>
+                            <li>Esthetic with translucent flexible clasps.</li>
+                            <li>Lightweight & comfortable.</li>
+                            <li>Easy to adjust and polish</li>
+                            
+                        </ul>
+                    </div>
+                     <p class="creative-dentals-modern-card-subtitle">Flexible partial solution for your cases. Manufactured from a thermoplastic matieral which gives it flexibility and durability</p>
+
+                    <!-- <div class="creative-dentals-modern-warranty-info lifetime">
+                        Lifetime Warranty
+                    </div> -->
+
+                    </div>
+                    </div>
+
+
+                     <!-- EMAX CAD MILLED  -->
+                     <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">EMAX CAD MILLED </h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture13.png " alt="Zr Heinex Sweden Prime" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <!-- <h3 class="creative-dentals-modern-advantages-title">Advantages</h3> -->
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>The EMAX Crowns are prepared from lithium disilicate,which is aglas-ceramic and possess excellent strength.</li>
+                            <li>These crowns are extremely durable and highly esthetic</li>
+                            <li>Comparatively most esthetic option at present , hence it’s widely used for restoring teeth in the anterior(front)region).</li>
+                            
+                        </ul>
+                    </div>
+                     
+
+                    <div class="creative-dentals-modern-warranty-info lifetime">
+                        Lifetime Warranty
+                    </div>
+
+                    </div>
+                    </div>
+
+
+                     <!-- DENTURE  -->
+                     <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">DENTURE</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture14.png " alt="Zr Heinex Sweden Prime" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <!-- <h3 class="creative-dentals-modern-advantages-title">Advantages</h3> -->
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Our acrylic Dentures are a cost effective solution designed to replace missing teeth.</li>
+                            <li>Our special team of Denture Technicians ensures all Denture technicians ensures aalll Dentures are fabricated to provide durability,natural function and rsthetics.</li>
+                        </ul>
+                    </div>
+                     
+
+                    <!-- <div class="creative-dentals-modern-warranty-info lifetime">
+                        Lifetime Warranty
+                    </div> -->
+
+                    </div>
+                    </div>
+
+
+
+                    <!-- PMMA -->
+            <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">PMMA</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture15.png " alt="Dental Crown Close-up" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <!-- <h3 class="creative-dentals-modern-advantages-title">Advantages</h3> -->
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Excellent abrasion resistance & no deformation</li>
+                            <li>Available for single shade & multi shaded Technical parameter:___________________</li>
+                            <li>Flexural strength >100Mpa</li>
+                            <li>Water absorption value 40ug/cm3 </li>
+                            <li>Dissolved value 7.5ug/cm3</li>
+                            <li>Chemical Composition: methacrylic acid polymer:99%,pigment:1%</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="creative-dentals-bottom-section">
-                <div class="creative-dentals-solid-zirconia">
-                    <div class="creative-dentals-zirconia-title">IFLEX DENTURE </div>
-                    <div class="creative-dentals-zirconia-text">
-                       Flexible partial solution for your cases. Manufactured from a thermoplastic matieral which gives it flexibility and durability.
+               <!-- IPS e.max -->
+            <div class="creative-dentals-modern-card">
+                <div class="creative-dentals-modern-card-header">
+                    <h2 class="creative-dentals-modern-card-title">IPS e.max</h2>
+                </div>
+                <div class="creative-dentals-modern-card-body">
+                    <div class="creative-dentals-modern-image-container">
+                        <img src="/img/Picture16.png " alt="Dental Crown Close-up" class="creative-dentals-modern-product-image">
+                    </div>
+                    
+                    <div class="creative-dentals-modern-advantages">
+                        <!-- <h3 class="creative-dentals-modern-advantages-title">Advantages</h3> -->
+                        
+                        <ul class="creative-dentals-modern-advantages-list">
+                            <li>Crowns & Bridges made of IPS e.max press accommodate self adhesive &conventional luting protocols</li>
+                            
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
-
 
     <!-- footer start -->
     <footer>
